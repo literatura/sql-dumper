@@ -24,6 +24,7 @@ class BaseHandler
     public function doBackup()
     {
         $dbCredentials = $this->getDbCredentials();
+        $this->beforeBackup();
 
         $pdoSettings = [];
 
@@ -36,6 +37,11 @@ class BaseHandler
         } catch (\Exception $e) {
             echo 'mysqldump-php error: ' . $e->getMessage();
         }
+    }
+
+    protected function beforeBackup()
+    {
+        
     }
 
     protected function getDumpSettings()

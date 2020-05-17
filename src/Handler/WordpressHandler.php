@@ -4,7 +4,9 @@ namespace SqlDumper\Handler;
 use SqlDumper\Exception\HandlerException;
 
 /**
- * Handler for Wordpress
+ * Handler for Wordpress.
+ *
+ * WARNING! Not used table_prefix from engine config. Used default wp_
  *
  * Class WordpressHandler
  * @package SqlDumper\Handler

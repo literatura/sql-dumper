@@ -94,6 +94,16 @@ class ExampleHandler extends BaseHandler implements HandlerInterface
     }
 
     /**
+     * If necessary, you can override this function to some actions before start backups.
+     *
+     * For example add table_prefix to table names in $excludedTables and $tableWithoutData
+     */
+    protected function beforeBackup()
+    {
+        parent::beforeBackup();
+    }
+
+    /**
      * If necessary, you can override the dump settings.
      * More detailed https://github.com/ifsnop/mysqldump-php
      *
