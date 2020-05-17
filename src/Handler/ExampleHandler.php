@@ -32,7 +32,7 @@ class ExampleHandler extends BaseHandler implements HandlerInterface
      * @param string $wwwFolder
      * @return bool
      */
-    public static function checkIsEngine(string $wwwFolder)
+    public static function checkIsEngine($wwwFolder)
     {
         if (file_exists($wwwFolder . '/wp-includes')) {
             return true;
