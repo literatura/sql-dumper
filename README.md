@@ -9,7 +9,7 @@ You can make the file executable and run it like this ```./sql-dumper.php /some/
 
 
 ### Handler configuration:
-To create new handlers, see the file /src/Handler/ExampleHandler.php
+To create new handlers, see the file ```/src/Handler/ExampleHandler.php```
 
 ``` 
 const ENGINE_CONFIG_PATH = 'path/to/config.php'; // path to engine config file (relative to the www folder)
@@ -20,4 +20,6 @@ protected $excludedTables = ['some_table_name', '...']; // These tables will not
 protected $tableWithoutData = ['some_table_name2']; // Only create commands without data will be included in the dump. Default is empty array
 ```
 
-The handler must implement the interface /src/Handler/HandlerInterface.php
+The handler must implement the interface ```/src/Handler/HandlerInterface.php```
+
+Then add the handler to the configuration file ```/src/config/config.php```
