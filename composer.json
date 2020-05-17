@@ -1,0 +1,11 @@
+{
+    "name": "literatura/sql-dumper",
+    "description": "Only for demo",
+    "autoload": {
+        "psr-4": {"SqlDumper\\": "src/"}
+    },
+    "require": {
+        "php-parallel-lint/PHP-Console-Color": "^0.3.0",
+        "ifsnop/mysqldump-php": "^2.9"
+    }
+}
